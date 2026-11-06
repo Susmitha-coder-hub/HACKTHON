@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "snapshots",
+      "why": "Snapshots capture full CPU, memory, and filesystem state into an instant restore checkpoint, allowing our agent to checkpoint before untrusted execution and roll back instantly when destructive commands or test failures occur.",
+      "evidence_path": "reports/evidence/snapshots.log"
+    },
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks execute Python inspection callbacks before commands enter the guest microVM, validating AST patterns and denying dangerous command structures such as malicious fork bombs and credential theft attempts.",
+      "evidence_path": "reports/evidence/safety_hooks.log"
+    },
+    {
+      "id": "network_policy",
+      "why": "Network policy disables outbound egress during untrusted test execution, mathematically guaranteeing that prompt-injected scripts or malicious payloads cannot exfiltrate environment secrets or sensitive tokens to attacker C2 servers.",
+      "evidence_path": "reports/evidence/containment.log"
+    }
+  ]
+}

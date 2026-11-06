@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When step 7 of 10 (untrusted dependency injection) fails or crashes the runtime, rolling back to the snapshot taken at step 6 restores the verified clean state instantly. This avoids the latency and expense of a cold start while preventing contaminated disk state from propagating into subsequent steps.",
+  "trace_path": "reports/failure_trace.jsonl"
+}

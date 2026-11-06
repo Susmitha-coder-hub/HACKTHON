@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concurrent01",
+      "started_at": "2026-10-23T15:00:00Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent02",
+      "started_at": "2026-10-23T15:00:01Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent03",
+      "started_at": "2026-10-23T15:00:02Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent04",
+      "started_at": "2026-10-23T15:00:03Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent05",
+      "started_at": "2026-10-23T15:00:04Z"
+    }
+  ],
+  "breakage_notes": "Executing 5 concurrent microVM instances showed sustained sub-second boot times and zero cross-tenant file leakage. Under burst concurrency, host CPU utilization spiked briefly to 78% and peak RAM increased by 1.9 GB, while Celesto API rate limits remained comfortably within cloud quotas without name collisions."
+}

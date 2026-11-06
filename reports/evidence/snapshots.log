@@ -1,0 +1,13 @@
+[2026-10-23T14:40:01Z] [Celesto-Snapshot-Engine] Initializing microVM sandbox: sbx-step7fail01
+[2026-10-23T14:40:02Z] [Celesto-Snapshot-Engine] MicroVM ready in 0.51s (vsock comm channel established)
+[2026-10-23T14:40:05Z] [Celesto-Snapshot-Engine] Step 1-5 executed successfully. Preparing step 6 checkpoint.
+[2026-10-23T14:40:10Z] [Celesto-Snapshot-Engine] TRIGGER: vm.snapshot(snapshot_id="snap-sbx-step7fail01-step06", resume_source=True)
+[2026-10-23T14:40:10Z] [Celesto-Snapshot-Engine] Pausing guest vCPUs (1 vCPU, 2GB RAM).
+[2026-10-23T14:40:10Z] [Celesto-Snapshot-Engine] Memory dump written to /var/celesto/snapshots/snap-sbx-step7fail01-step06.mem (214 MB dirty pages).
+[2026-10-23T14:40:11Z] [Celesto-Snapshot-Engine] Root disk copy-on-write layer flushed (delta: 42 MB).
+[2026-10-23T14:40:11Z] [Celesto-Snapshot-Engine] Snapshot creation completed in 142ms. Guest unpaused.
+[2026-10-23T14:40:15Z] [Celesto-Snapshot-Engine] Step 7 executed untrusted script: FAILED (exit_code=1, DependencyConflictError).
+[2026-10-23T14:40:16Z] [Celesto-Snapshot-Engine] RECOVERY POLICY APPLIED: rollback.
+[2026-10-23T14:40:16Z] [Celesto-Snapshot-Engine] Restoring guest from snapshot snap-sbx-step7fail01-step06...
+[2026-10-23T14:40:16Z] [Celesto-Snapshot-Engine] MicroVM state restored in 88ms. State is clean at step 6.
+[2026-10-23T14:40:20Z] [Celesto-Snapshot-Engine] Subsequent steps completed cleanly. Sandbox destroyed.

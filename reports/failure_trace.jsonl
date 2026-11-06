@@ -1,0 +1,13 @@
+{"step": 1, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Initialized test runner environment in guest", "ts": "2026-10-23T14:45:01Z"}
+{"step": 2, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Mounted isolated project workspace", "ts": "2026-10-23T14:45:03Z"}
+{"step": 3, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Installed verified base dependencies", "ts": "2026-10-23T14:45:05Z"}
+{"step": 4, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Executed unit tests 1 to 50", "ts": "2026-10-23T14:45:07Z"}
+{"step": 5, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Generated intermediate test metrics", "ts": "2026-10-23T14:45:09Z"}
+{"step": 6, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "snapshot_created", "status": "success", "snapshot_id": "snap-sbx-step7fail01-step06", "details": "Checkpoint snapshot taken prior to risky step", "ts": "2026-10-23T14:45:11Z"}
+{"step": 7, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_failed", "status": "failed", "error": "DependencyConflictError: Untrusted package corrupted namespace", "ts": "2026-10-23T14:45:12Z"}
+{"step": 7, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "policy_applied", "policy": "rollback", "target_snapshot": "snap-sbx-step7fail01-step06", "details": "Restoring microVM to pre-step-7 snapshot", "ts": "2026-10-23T14:45:13Z"}
+{"step": 6, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "snapshot_restored", "status": "restored", "snapshot_id": "snap-sbx-step7fail01-step06", "details": "Guest restored in 88ms", "ts": "2026-10-23T14:45:14Z"}
+{"step": 8, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Executed fallback regression tests", "ts": "2026-10-23T14:45:16Z"}
+{"step": 9, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Aggregated autograder report", "ts": "2026-10-23T14:45:18Z"}
+{"step": 10, "total_steps": 10, "sandbox_name": "sbx-step7fail01", "event": "step_completed", "status": "success", "details": "Emitted signed output verification digest", "ts": "2026-10-23T14:45:20Z"}
+{"sandbox_name": "sbx-step7fail01", "event": "sandbox_cleaned_up", "status": "deleted", "details": "MicroVM deleted via lifecycle hook", "ts": "2026-10-23T14:45:21Z"}

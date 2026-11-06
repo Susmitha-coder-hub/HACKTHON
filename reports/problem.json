@@ -1,0 +1,6 @@
+{
+  "who": "Computer science educators and automated assessment platforms grading untrusted student submissions and external packages at scale.",
+  "agent_work": "The agent executes untrusted code submissions in isolated Celesto microVMs, analyzes test output, enforces strict resource caps, and logs behavior without host leakage.",
+  "proof_output": "Structured JSON test results and sandbox containment audit logs.",
+  "idea_source": "idea_bank"
+}
